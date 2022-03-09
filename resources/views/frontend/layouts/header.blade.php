@@ -33,17 +33,8 @@
             <li class="title">
                 <a href="{{route('home')}}"><img src="{{asset('images/logo.png')}}"></a>
             </li>
-            <li> <a href="javascript:void(0);">Air Conditioners</a>
-                <ul class="drop-down one-column hover-fade">
-                    <li><a href="service-details/ac-wet-servicing.html">Wet Servicing</a></li>
-                    <li><a href="service-details/ac-dry-servicing.html">Dry Servicing</a></li>
-                    <li><a href="service-details/ac-installation.html">Installation</a></li>
-                    <li><a href="service-details/ac-uninstallation.html">Uninstallation</a></li>
-                    <li><a href="service-details/ac-gas-top-up.html">Gas Top Up</a></li>
-                    <li><a href="service-details/ac-gas-refill.html">Gas Refill</a></li>
-                    <li><a href="service-details/ac-repair.html">Repair</a></li>
-                </ul>
-            </li>
+            <li> <a href="{{route('main_services')}}">Services Categories</a>
+            
             <li> <a href="javascript:void(0);">Appliances</a>
                 <ul class="drop-down one-column hover-fade">
                     <li><a href="servicesbycategory/11.html">Computer Repair</a></li>

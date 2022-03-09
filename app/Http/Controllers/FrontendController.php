@@ -2,36 +2,44 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MainCategory;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
-    function index()
+    public function mainServices()
+    {
+        $main_categories = MainCategory::all();
+        return view('frontend.service-categories',['main_categories' => $main_categories]);
+    }
+
+
+    public function index()
     {
         return view("frontend.index");
     }
 
-    function aboutUs()
+    public function aboutUs()
     {
         return view("frontend.about-us");
     }
 
-    function contactUs()
+    public function contactUs()
     {
         return view("frontend.contact-us");
     }
 
-    function faqs()
+    public function faqs()
     {
         return view("frontend.faq");
     }
 
-    function termAndConditions()
+    public function termAndConditions()
     {
         return view("frontend.terms-of-use");
     }
 
-    function privacy_policy()
+    public function privacy_policy()
     {
         return view("frontend.privacy");
     }
